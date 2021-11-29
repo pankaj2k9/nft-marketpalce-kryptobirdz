@@ -4,6 +4,11 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 
 Try running some of the following tasks:
 
+```
+npm install
+
+```
+
 ```shell
 npx hardhat accounts
 npx hardhat compile
@@ -12,4 +17,9 @@ npx hardhat test
 npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
+```
+
+```
+npm run dev
+
 ```
