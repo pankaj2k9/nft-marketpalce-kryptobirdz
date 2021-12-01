@@ -1,18 +1,19 @@
 require("@nomiclabs/hardhat-waffle");
-const projectId = 'add your project id here'
+const projectId = '4e5c5b4f2172450db493cc1edf135035'
 const fs = require('fs')
 const keyData = fs.readFileSync('./p-key.txt', {
   encoding:'utf8', flag:'r'
 })
 
+
 module.exports = {
-  defaultNetwork: 'hardhat',
+  defaultNetwork: 'ropsten',
   networks:{
     hardhat:{
       chainId: 1337 // config standard 
     },
-    mumbai:{
-      url:`https://polygon-mumbai.infura.io/v3/${projectId}`,
+    ropsten:{
+      url:`https://ropsten.infura.io/v3/${projectId}`,
       accounts:[keyData]
     },
     mainnet: {
